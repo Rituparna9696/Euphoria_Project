@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Profile</title>
+    <style type="text/css">
+        body{
+            margin-top: 20px;
+            background-color: lightgray;
+        }
+        .main{
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topbar{
+            background-color: teal;
+            overflow: hidden;
+        }
+        .topbar a{
+            float: right;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 26px;
+            text-decoration: none;
+            font-size: 26px;
+        }
+        .sidebar{
+            background-color: #333;
+            color: white;
+            height: 100%;
+        }
+        .sidebar a{
+            margin-left: 10px;
+            display: block;
+            color: white;
+            padding-bottom: 10px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .content{
+            background-color: whitesmoke;
+        }
+        .m-3-pt-3,.m-3{
+            margin: 20px;
+            text-align: center;
+        }
+        .col-md-9-text-secondary{
+            text-align: center;
+        }
+        .mt-3 a{
+            margin: 10px;
+            width: 200%;
+            border-right: 1px black solid; 
+            display: flex;
+            align-items: center;
+            color: #224923;
+            font-size: 18px;
+        }
+        /*.row{
+            text-align: center;
+        }*/
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+        <div class="topbar">
+            <a href="">Logout</a>
+            <a href="">Support</a>
+            <a href="">Work</a>
+            <a href="">Home</a>
+        </div>
+        <div class="row">
+            <div class="col-md-4-mt-1">
+                <div class="card-text-center-sidebar">
+                    <div class="card-body">
+                        <img src="" class="rounded-circle" width="150">
+                        <div class="mt-3">
+                            <h3>Rituparna Ghosh Chowdhury</h3>
+                            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                            <a href="#"><i class="fa-solid fa-briefcase"></i>Work</a>
+                            <a href="#"><i class="fa-solid fa-headset"></i>Support</a>
+                            <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i>Signout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8-mt-1">
+                    <div class="card-mb-3-content">
+                        <h1 class="m-3-pt-3">About</h1>
+                        <div class="card-body">
+                            <div class="row">
+                                
+                                </div>
+                                <div class="col-md-9-text-secondary">
+                                    <label for ="Full Name">Full Name* : </label>
+                                        <input type ="**********" id ="First Name" name ="**********" placeholder="**********">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                
+                                </div>
+                                <div class="col-md-9-text-secondary">
+                                    <label for ="Email">Email* : </label>
+                                        <input type ="Email" id ="Email" name ="Email" placeholder="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                
+                                </div>
+                                <div class="col-md-9-text-secondary">
+                                    <label for ="Phone">Phone* : </label>
+                                        <input type ="number" id ="Phone" name ="Phone" placeholder="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                
+                        </div>
+                        <div class="col-md-9-text-secondary">
+                            <label for ="Address">Address* : </label>
+                                <input type ="text" id ="Address" name ="Address" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mb-3-content">
+                <h1 class="m-3">Recent Projects</h1>
+                <div class="card-body">
+                    <div class="row">
+                        <label for ="Project Name">Project Name* : </label>
+                            <input type ="text" id ="Project Name" name ="Project Name" placeholder="">
+                        </div>
+                        <div class="col-md-9-text-secondary">
+                            <label for ="Project Description">Project Description* : </label>
+                            <input type ="text" id ="Project Description" name ="Project Description" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>  
+</body>
+</html>
