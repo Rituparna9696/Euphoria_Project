@@ -28,9 +28,3 @@ li{
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.container-fluid{
-    width:99%;
-    height:11406px;
-    border:1px solid red;
-    background-color: #f2f3f7;
-}
