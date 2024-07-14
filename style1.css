@@ -1,3 +1,9 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 .navbar{
     background-color: #f3f3f3;
     display: flex;
