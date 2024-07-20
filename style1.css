@@ -68,3 +68,6 @@ h6{
     font-weight: 500;
     padding-bottom: 5px;
 }
+.information-box .option-box ul li:hover{
+    color: #0000ff;
+}
