@@ -28,6 +28,43 @@ li{
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.row{
-    border:1px solid gr
+
+.profile-box .image-box img, h6{
+    display: inline-flex;
+    padding:5px;
+}
+.image-box{
+    margin: 0 10px;
+    padding:5px;
+    background-color: #fff;
+}
+.profile-box{
+    padding: 20px 0;
+    background-color: rgb(244, 250, 189);
+}
+h6{
+    width: 600;
+    font-size: 25px;
+    text-align: start;
+    text-transform: capitalize;
+}
+.information-box{
+    padding: 20px 0;
+    background-color: rgb(244, 250, 189);
+}
+.option-box{
+    margin: 0 10px;
+    padding:5px;
+    background-color: #fff;
+}
+.frequency-box{
+    margin: 0 10px;
+    padding:5px;
+    background-color: #fff;
+    padding: 5px; 
+    display:flex;
+}
+.frequency-box h6{
+    font-weight: 500;
+    padding-bottom: 5px;
 }
