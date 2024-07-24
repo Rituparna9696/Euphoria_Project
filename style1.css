@@ -120,3 +120,8 @@ i{
 .profile-information-box form .form-label{
     padding-top: 30px;
 }
+.profile-information-box form h4{
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
