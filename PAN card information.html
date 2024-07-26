@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--Bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Manage Addresses</title>
-    <link rel="stylesheet" type="text/css" href="./style3.css">
+    <title>PAN Card Information</title>
+    <link rel="stylesheet" type="text/css" href="./style4.css">
 </head>
 <body>
     <!-- ....... index Top-nav ........-->
@@ -101,23 +101,43 @@
                         <h6>Frequently Visited:</h6><br>
                         <li>Track Order</li> 
                          <li>Help Center</li>  
-                    </div>
-             
-                
+                    </div>   
             </div>
             <div class="col-9">
-                <div class="manage-address-box">
-                    <span>Manage Addresses</span>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="+ ADD A NEW ADDRESS">
+                <div class="PAN-card-information-box">
+                    <form>
+                        <div class="form-row">
+                          <div class="col">
+                            <label for="Personal Information" class="form-label">PAN Card Information</label>
+                            <input type="text" class="form-control" placeholder="PAN Card Number">
+                          </div>
+                          <br>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Full name">
+                          </div>
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                          <label for="exampleFormControlFile1">Upload PAN Card (Only JPEG file is allowed)</label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                          </div>
+                          <p>I do hereby declare that PAN furnished/stated above is correct and belongs to me, registered as an account holder with www.ClikShop.com. I further declare that I shall solely be held responsible for the consequences, in case of any false PAN declaration.</p>
+                          <button type="button" name="UPLOAD">UPLOAD</button>
+                          <br><br>
+                          <p class="para">Read Terms & Conditions of PAN Card Information</p>
+                      </form>
+
                 </div>
             </div>
         </div>
 	</div>
-            </div>           
-            
-        
-            
-		</div>
+    </div>    
+	</div>
 	</div>
 </section>  
     <!--grid system end-->
@@ -173,7 +193,7 @@
     <div class="clear"></div>
 </section>
 
-	<!--Bootstrap js-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!--Bootstrap js-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>

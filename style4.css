@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    background-color: #f3f3f3;
+    display: flex;
+}
+.navbar .input-group{
+    margin-top: 3px;
+    width: 400px;
+    height: 39px;
+}
+.navbar-nav .item {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;  
+    
+}
+.navbar-nav  a {
+    color: #353434;
+}
+.dropdown-menu i{
+    color: rgb(5, 66, 198);
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.profile-box .image-box img, h6{
+    display: inline-flex;
+    padding:5px;
+}
+.image-box{
+    margin: 0 10px;
+    padding:5px;
+    background-color: #fff;
+}
+.profile-box{
+    padding: 20px 0;
+    background-color: rgb(244, 250, 189);
+}
+h6{
+    width: 600;
+    font-size: 25px;
+    text-align: start;
+    text-transform: capitalize;
+}
+.information-box{
+    padding: 20px 0;
+    background-color: rgb(244, 250, 189);
+}
+.option-box{
+    margin: 0 10px;
+    padding:5px;
+    background-color: #fff;
+}
+.frequency-box{
+    margin: 10px;
+    padding:5px;
+    background-color: #fff;
+    padding: 5px; 
+    display:flex;
+}
+.frequency-box h6{
+    font-weight: 500;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.information-box .option-box ul li a:hover{
+    color: #0000ff;
+    background-color: #bcbcf8;
+}
+i{
+    color: #000000;
+}
+.PAN-card-information-box{
+    display: inline-flex;
+    padding-top:20px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 580px;
+    background-color: #fff;
+}
+.PAN-card-information-box .form-label{
+    font-weight: 600;
+    font-size: 20px;
+}
+.PAN-card-information-box button{
+    background-color: #2874f0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+.PAN-card-information-box .para{
+    color:#2874f0;
+    font-weight: 500;
+    font-size: 15px;
+}
