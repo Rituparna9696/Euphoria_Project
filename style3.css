@@ -84,11 +84,11 @@ i{
     padding-right: 580px;
     background-color: #fff;
 }
-.manage-address-box span{
+.manage-address-box .form-label{
     font-weight: 500;
     font-size: 20px;
 }
-.manage-address-box input{
+.manage-address-box .form-control{
     font-weight: 500;
     color: #1818f0;
 }
