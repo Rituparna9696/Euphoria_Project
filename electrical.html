@@ -12,30 +12,28 @@
     <title>ClikShop || Electrical</title>
     <!-- own js -->
     <script src="./js/script.js" defer></script>
-    <!-- payment js link -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <!-- payment js link -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
-<body class="protected">
 
-  <!-- ... Top-nav ....-->
-  <section>
-      <div class="top-nav sticky-top head">
-          <div class="container">
-              <div id="greeting"></div>
-              <h3>0208 058 2932   ||  Customerservices@ClikShop.Co.in</h3>
-          </div>
+  <body>
+
+        <!-- ... Top-nav ....-->
+<section>
+  <div class="top-nav  head">
+      <div class="container">
+          <span id="greeting"></span>
+          <h3>0208 058 2932   ||  Customerservices@ClikShop.Co.in</h3>
       </div>
+  </div>
   </section>
-      
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
       <img src="./img/logo.png" class="navbar-logo" alt="LOGO" style="width: 100px;" >
-      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
+      
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item item">
@@ -49,18 +47,19 @@
               </li>
               <li class="nav-item dropdown item">
                   <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class=" fas fa-user"></i> Profile 
+                      <i class=" fas fa-user"></i> Login 
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> My Profile</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="fas fa-clipboard-check"></i> Clik-Shop Plus Zone</a></li>
-                      <li><a class="dropdown-item" href="orders.html"><i class="fas fa-box"></i> Orders</a></li>
-                      <li><a class="dropdown-item" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i> Gift Cards</a></li>
-                      <li><a class="dropdown-item" href="contact.html"><i class="fas fa-phone-square-alt"></i></i> Contact</a></li>
-                      <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notifications</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" onclick="usrLogout()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> My Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-clipboard-check"></i> Clik-Shop Plus Zone</a></li>
+                    <li><a class="dropdown-item" href="orders.html"><i class="fas fa-box"></i> Orders</a></li>
+                    <li><a class="dropdown-item" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-gift"></i> Gift Cards</a></li>
+                    <li><a class="dropdown-item" href="contact.html"><i class="fas fa-phone-square-alt"></i></i> Contact</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" id="logbtn" data-bs-toggle="modal" data-bs-target="#authModal"><i class="fas fa-sign-out-alt"></i> Login</a></li>
+                    <li><a class="dropdown-item" id="logoutButton" onclick="usrLogout()" style="display:none;" ><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                   </ul>
               </li>
               <li class="nav-item item">
@@ -73,25 +72,25 @@
       </div>
   </div>
   </nav>
-      
+  
   <!-- Nav bar products -->
   <nav class="navbar-offer navbar-expand-lg">
-      <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav container">
   
           <li class="nav-combo">
-              <img src="./img/glosry.png" alt="Grocery">
+              <img src="./img/glosry.png" alt="Grocery" onclick="OpenPageNav1()">
               <a class="nav-link" href="grocery.html">Grocery</a>
           </li>
   
           <li class="nav-combo">
-              <img src="./img/phone.png" alt="Mobiles">
+              <img src="./img/phone.png" alt="Mobiles" onclick="OpenPageNav2()">
               <a class="nav-link" href="mobiles.html">Mobiles</a>
           </li>
           
           <li class="nav-combo dropdown">
-              <img src="./img/fasion.png" alt="fashion">
-              <a class="nav-link dropdown-toggle" href="fassion.html">Fashion</a>
+              <img src="./img/fasion.png" alt="fassion" onclick="OpenPageNav3()">
+              <a class="nav-link dropdown-toggle" href="fassion.html">Fassion</a>
               <div class="dropdown-content">
       
                   <div class="nested-dropdown">
@@ -175,12 +174,12 @@
           </li>
   
           <li class="nav-combo">
-              <img src="./img/electronic.png" alt="Electronics">
+              <img src="./img/electronic.png" alt="Electronics" onclick="OpenPageNav4()">
               <a class="nav-link" href="electronics.html">Electronics</a>
           </li>
           
           <li class="nav-combo dropdown">
-              <img src="./img/boyy.png" alt="fassion">
+              <img src="./img/boyy.png" alt="fassion" onclick="OpenPageNav5()">
               <a class="nav-link dropdown-toggle" href="kids.html">Kids Fashion</a>
               <div class="dropdown-content">
       
@@ -265,7 +264,7 @@
           </li>
   
           <li class="nav-combo dropdown">
-              <img src="./img/Furniture.png" alt="Home & Furniture">
+              <img src="./img/Furniture.png" alt="Home & Furniture" onclick="OpenPageNav6()">
               <a class="nav-link dropdown-toggle" href="home_furniture.html">Home & Furniture</a>
               <div class="dropdown-content">
               
@@ -341,23 +340,23 @@
           </li>
   
           <li class="nav-combo">
-              <img src="./img/fridge.png" alt="Electrical">
+              <img src="./img/fridge.png" alt="Electrical" onclick="OpenPageNav7()">
               <a class="nav-link" href="electrical.html">Electrical</a>
           </li>
   
           <li class="nav-combo">
-              <img src="./img/Beauty.png" alt="Toys & More">
+              <img src="./img/Beauty.png" alt="Toys & More" onclick="OpenPageNav8()">
               <a class="nav-link" href="toys.html">Toys & More</a>
           </li>
   
           <li class="nav-combo">
-              <img src="./img/twowhiller.png" alt="Two Wheelers">
+              <img src="./img/twowhiller.png" alt="Two Wheelers" onclick="OpenPageNav9()">
               <a class="nav-link" href="two-wheelers.html">Two Wheelers</a>
           </li>
       </ul>
-      </div>
+    </div>
   </nav>
-  
+
     <!-- ............Grocery-main-work.......... -->
     <div class="product-all-item">
       <div class="container-fluid">
@@ -428,12 +427,12 @@
           <div class="col-xl-9 right">
             <div class="container">
               <div class="row">
-
+                
                 <div class="col-xl-3 col-lg-3"> <!-- card no-1 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST" id="dfy" onclick="wishList('Whirlpool 8kg Ozone Technology', '/./img/electrical_1.jpg','37,980')"></i></a>
-                    <img src="./img/electrical_1.jpg" title="Electric Pro Wind Iron" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Whirlpool 8kg Ozone Technology  </h5>
+                 <div class="product" onclick="window.location.href='iron.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
+                    <img src="./img/electrical_1.png" title="Electric Pro Wind Iron" alt="FORTUNE Soya Chunks" class="img-fluid">
+                    <h5>Electric Pro Wind Stream Iron</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -442,17 +441,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹37,980 <span class="old_price"> ₹42,200</span> 10% off</p>
-                    <button class="quantity" onclick="addcart('Whirlpool 8kg Ozone Technology', './img/electrical_1.jpg', '37980','42200','10')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '37980')">Buy Now</button>
+                    <p class="price">₹1980 <span class="old_price"> ₹2,000</span> 10% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-2 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Mi A Series 80cm HD Smart TV', './img/electrical_2.jpg', '11,999')"></i></a>
-                    <img src="./img/electrical_2.jpg" title="Electrical Switchboard HPM Double Powerpoint" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Mi A Series 80cm HD Smart TV</h5>
+                  <div class="product" onclick="window.location.href='socket.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
+                    <img src="./img/electrical_2.png" title="Electrical Switchboard HPM Double Powerpoint" alt="FORTUNE Soya Chunks" class="img-fluid">
+                    <h5>Electrical Switchboard HPM Double Powerpoint</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -461,17 +460,17 @@
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹11,999 <span class="old_price"> ₹24,999</span> 52% off</p>
-                    <button class="quantity" onclick="addcart('Mi A Series 80cm HD Smart TV', './img/electrical_2.jpg', '11999','24999','52')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '11999')">Buy Now</button>
+                    <p class="price">₹699 <span class="old_price"> ₹999</span> 30% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-3 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Prestige Induction PIC 1600W Cooktop', './img/electrical_3.jpg', '₹2,224')"></i></a>
-                    <img src="./img/electrical_3.jpg" title="Kurta Pajama and Lehengacholi Combination" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Prestige Induction PIC 1600W Cooktop</h5>
+                  <div class="product" onclick="window.location.href='tap.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
+                    <img src="./img/electrical_3.png" title="Kurta Pajama and Lehengacholi Combination" alt="FORTUNE Soya Chunks" class="img-fluid">
+                    <h5>Multipurpose Double Sided Tape</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -480,17 +479,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹2,224 <span class="old_price"> ₹3,645</span> 39% off</p>
-                    <button class="quantity" onclick="addcart('Prestige Induction PIC 1600W Cooktop', './img/electrical_3.jpg','2224','3645','39')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '2224')">Buy Now</button>
+                    <p class="price">₹130 <span class="old_price"> ₹999</span> 86% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-4 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Coocaa Frameless 108cm Ultra HD Smart TV', './img/electrical_4.jpg','₹24,499')"></i></a>
-                    <img src="./img/electrical_4.jpg" title="Kids Girls Sailor's Mini Skirt Set" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5> Coocaa Frameless 108cm Ultra HD Smart TV</h5>
+                  <div class="product" onclick="window.location.href='usb.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
+                    <img src="./img/electrical_4.png" title="Kids Girls Sailor's Mini Skirt Set" alt="FORTUNE Soya Chunks" class="img-fluid">
+                    <h5> Universal  Adapter with Built-in Dual USB</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -499,17 +498,17 @@
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹24,499 <span class="old_price"> ₹69,999</span> 65%off</p>
-                    <button class="quantity" onclick="addcart('Coocaa Frameless 108cm Ultra HD Smart TV', './img/electrical_4.jpg','24499','69999','65')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '24499')">Buy Now</button>
+                    <p class="price">₹359 <span class="old_price"> ₹999</span> 64%off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-5 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Whirlpool 677L Frost Multi-Door Referihertor', './img/electrical_5.jpg','₹1,03,565 ')"></i></a>
-                    <img src="./img/electrical_5.jpg" title="Klick Gadgets With KG Logo 3pinRedCotton" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Whirlpool 677L Frost Multi-Door Referihertor</h5>
+                  <div class="product" onclick="window.location.href='cabile.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
+                    <img src="./img/electrical_5.png" title="Klick Gadgets With KG Logo 3pinRedCotton" alt="FORTUNE Soya Chunks" class="img-fluid">
+                    <h5>Klick Gadgets With KG Logo 3pinRedCotton</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -518,17 +517,17 @@
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹1,03,565 <span class="old_price"> ₹1,34,500</span> 23% off</p>
-                    <button class="quantity" onclick="addcart('Whirlpool 677L Frost Multi-Door Referihertor','./img/electrical_5.jpg','103565','134500','23')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '103565')">Buy Now</button>
+                    <p class="price">₹386 <span class="old_price"> ₹999</span> 61% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>   
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-6-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Pigeon Oven Air Fryer with 1800W', './img/electrical_6.png','₹7,153')"></i></a>
+                  <div class="product"  onclick="window.location.href='selvertap.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_6.png" title="Aluminum Foil Buty RubberTape" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Pigeon Oven Air Fryer with 1800W</h5>
+                    <h5>Aluminum Foil Buty RubberTape</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>                 
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -537,17 +536,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹7,153<span class="old_price"> ₹15,896</span> 55% off</p>
-                    <button class="quantity" onclick="addcart('Pigeon Oven Air Fryer with 1800W', './img/electrical_6.png','7153','15896','55')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '7153')">Buy Now</button>
+                    <p class="price">₹2,495 <span class="old_price"> ₹4,444</span> 43% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no-7-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('HAVELLS Aqua Plus Electric Kettle', './img/electrical_7.png','₹1,417')"></i></a>
+                  <div class="product" onclick="window.location.href='health.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_7.png" title="Electrotherapy Health Herald IFT DigitalThrea" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>HAVELLS Aqua Plus Electric Kettle </h5>
+                    <h5>Electrotherapy Health Herald IFT DigitalThrea</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -556,17 +555,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹1,417 <span class="old_price"> ₹3,295</span> 57% off</p>
-                    <button class="quantity" onclick="addcart('HAVELLS  Aqua Plus Electric Kettle', './img/electrical_7.png','1417','3295','57')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '1417')">Buy Now</button>
+                    <p class="price">₹579 <span class="old_price"> ₹999</span> 42% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no- 8-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('AGARO Royal 4 Slice Steel pop up Toaster', './img/electrical_8.png', '₹2,120')"></i></a>
+                  <div class="product" onclick="window.location.href='pen.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_8.png" title=" Massage Pen Electric Acupuncture (Multicolor) " alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>AGARO Royal 4 Slice Steel pop up Toaster</h5>
+                    <h5>Massage Pen Electric Acupuncture (Multicolor)</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -575,17 +574,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹2,120 <span class="old_price"> ₹3,999</span> 47% off</p>
-                    <button class="quantity" onclick="addcart('AGARO Royal 4 Slice Steel pop up Toaster', './img/electrical_8.png','2120','3999','47')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '2120')">Buy Now</button>
+                    <p class="price">₹473 <span class="old_price"> ₹2,167</span> 78% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no- 9-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('MarQ (Tiatnium Blue) Copper Water Purifier ', './img/electrical_9.png', '₹5,610')"></i></a>
+                  <div class="product" onclick="window.location.href='led.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_9.png" title="Aluminum CaseRGB StripLight LED Pixel" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>MarQ (Tiatnium Blue) Copper Water Purifier </h5>
+                    <h5>Aluminum CaseRGB StripLight LED Pixel</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -594,17 +593,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹5,610 <span class="old_price"> ₹16,500</span> 66% off</p>
-                    <button class="quantity" onclick="addcart('WMarQ (Tiatnium Blue) Copper Water Purifier ', './img/electrical_9.png','5610','16500','66')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '5610')">Buy Now</button>
+                    <p class="price">₹899 <span class="old_price"> ₹2,500</span> 64% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no- 10 -->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('HAVELLS  1200mm 3 Blade Celling Fan', './img/electrical_10.png','₹2,538')"></i></a>
+                  <div class="product"  onclick="window.location.href='aqupamtura.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_10.png" title=" Electric Foot Massage Pad,USB Rechargeable " alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>HAVELLS  1200mm 3 Blade Celling Fan</h5>
+                    <h5>Electric Foot Massage Pad,USB Rechargeable</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -613,17 +612,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹2,538<span class="old_price"> ₹3,296</span> 23% off</p>
-                    <button class="quantity" onclick="addcart('HAVELLS  1200mm 3 Blade Celling Fan', './img/electrical_10.png','2538','3296','23')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '2538')">Buy Now</button>
+                    <p class="price">₹469 <span class="old_price"> ₹599</span> 21% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no- 11-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('PHILIPS HD4928 Induction Cooktop', './img/electrical_11.png','₹2,818')"></i></a>
+                  <div class="product" onclick="window.location.href='light.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_11.png" title="Elcetrical Camphor Glass kapoor Dani" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>PHILIPS HD4928 Induction Cooktop</h5>
+                    <h5>Elcetrical Camphor Glass kapoor Dani</h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -632,17 +631,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹2,818 <span class="old_price"> ₹5,995</span> 53% off</p>
-                    <button class="quantity" onclick="addcart('PHILIPS HD4928 Induction Cooktop', './img/electrical_11.png','2818','5995','53')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '2818')">Buy Now</button>
+                    <p class="price">₹389 <span class="old_price"> ₹899</span> 56% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
                 <div class="col-xl-3 col-lg-3"> <!-- card no- 12-->
-                  <div class="product" onclick="OpenCatagoryDetails()">
-                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"  onclick="wishList('Wipro Elato GD203 1200 W Dry iron ', './img/electrical_12.png','₹956')"></i></a>
+                  <div class="product"  onclick="window.location.href='ultrasonic.html';">
+                    <a class="wish"><i class="fa-regular fa-heart" title="ADD TO WISH LIST"></i></a>
                     <img src="./img/electrical_12.png" title="Anayani Ultrasonic Insects Pest Control" alt="FORTUNE Soya Chunks" class="img-fluid">
-                    <h5>Wipro Elato GD203 1200 W Dry iron </h5>
+                    <h5>Anayani Ultrasonic Insects Pest Control </h5>
                     <p class="description">Electrical items encompass a wide range of devices and components that use electricity to perform various functions.</p>
                     <div class="star-icons">
                       <i class="fa-solid fa-star"></i>
@@ -651,9 +650,9 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                     </div>
-                    <p class="price">₹956 <span class="old_price"> ₹1,950</span> 51% off</p>
-                    <button class="quantity" onclick="addcart('Wipro Elato GD203 1200 W Dry iron ', './img/electrical_12.png','956','1950','51')">Add to Cart</button>
-                    <button  class="btn btn-danger" onclick="buyNow('ThankYou', '956')">Buy Now</button>
+                    <p class="price">₹156 <span class="old_price"> ₹499</span> 68% off</p>
+                    <button class="quantity">Add to Cart</button>
+                    <button class="btn btn-danger">Buy Now</button>
                   </div>
                 </div>
 
@@ -666,7 +665,7 @@
       </div>
     </div>
 
-  <!--...... footer ........-->
+        <!--...... footer ........-->
 <div class="footer-banner"></div>
 <section class="foot">
     <footer class="footer">
@@ -712,12 +711,11 @@
 <section>
     <div class="down-footer">
         <div class="container">
-        <h3>© 2024. ClikShop Ltd. all Rights Reserved</h3>
+        <h3 align="center">© 2024. ClikShop Ltd. all Rights Reserved</h3>
         </div>
     </div>
     <div class="clear"></div>
 </section>
-   
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
